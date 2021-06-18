@@ -77,12 +77,6 @@ wss.on('connection', async function (ws, req) {
                     ws.send(JSON.stringify({badRequest: true}))
             }
         } catch (error) {console.log(error.message); ws.send(JSON.stringify({badRequest: true}))}
-            
-        
-      //
-      // Here we can now use session parameters.
-      //
-      //console.log(`Received message ${message} from user ${userId}`);
     });
 
   
