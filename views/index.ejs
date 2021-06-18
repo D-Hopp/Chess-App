@@ -1,0 +1,22 @@
+    <!--Main Body-->
+    <div class="container-fluid bg-secondary py-2 position-relative" id="body" style="height: 100vh;">
+        <!-- Choose Name -->
+        <form id="anonymForm" onsubmit="return false" novalidate>
+          <script src="https://hoppius.work/anonymFormScript.js"></script>
+          <div class="row position-absolute top-50 translate-middle-y w-100 fs-2">
+            <div class="col-lg-1 col-md-0 col-sm-0"></div>
+            <div class="mb-3 col-lg-9 col-md-10 col-sm-12">
+              <label for="choosenname" class="form-label position-relative start-50 translate-middle-x">Choose your Name</label>
+              <input type="name" class="form-control fs-2" id="choosenname" aria-describedby="choosennameHelp">
+              <div id="choosennameHelp" class="form-text-secondary">Names are shared until they get registered!</div>
+            </div>
+            <div class="mb-3 col-lg-2 col-md-2 col-sm 12">
+              <button type="submit" class="btn btn-dark position-relative top-50 start-50 translate-middle fs-2">Choose</button>
+            </div>
+          </div>
+        </form>
+
+    </div>
+
+    <!--Main JS-->
+    <script src="https://hoppius.work/index.js"></script>

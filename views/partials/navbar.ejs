@@ -1,0 +1,74 @@
+    <!--Navigationbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="navbar" style="height: 56px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Chess-App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar Objects -->
+          <div class="collapse navbar-collapse bg-dark p-2" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Home Button -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="login" href="/">Home</a>
+              </li>
+              <!-- Login Dropdown -->
+              <li class="nav-item dropdown" id="navbarLogin">
+                <a class="nav-link dropdown-toggle" href="" id="navbarLoginDisplay" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Login
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" hrecf="">
+                    <form id="loginForm" onsubmit="return false" novalidate>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">User</label>
+                        <input type="email" class="form-control" id="username" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Your username is not your email-adress.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password">
+                      </div>
+                      <button id="login" type ="submit" class="btn btn-primary">Login</button>
+                    </form>
+                  </a>
+                </ul>
+              </li>
+              <!-- Register Dropdown -->
+              <li class="nav-item dropdown" id="navbarRegister">
+                <a class="nav-link dropdown-toggle" href="" id="navbarRegisterDisplay" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Register
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" hrecf="">
+                    <form id="registerForm" onsubmit="return false" novalidate>
+                      <script defer src="https://hoppius.work/loginFormScript.js"></script>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">User</label>
+                        <input type="email" class="form-control" id="username-register" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Your username is not your email-adress.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password-register">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Does Nothing</label>
+                      </div>
+                      <button id="register" type ="submit" class="btn btn-primary">Register</button>
+                    </form>
+                  </a>
+                </ul>
+              </li>
+              <li class="nav-item">
+            </li>
+            </ul>
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+      <div hidden id="loginName"><%- username %></div>

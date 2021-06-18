@@ -1,0 +1,44 @@
+<!--Main Body-->
+
+<div class="row bg-secondary g-0" style="max-width: 100vw; overflow-x: hidden;">
+    <!--Game on left side-->
+    <div class="col-sm-12 col-md-9 col-lg-9" style="--bs-gutter-x: 0;">
+        <div class="container-fluid bg-secondary py-2 position-relative fs-2" id="body" style="height: 100vh;">
+            <!--Game Title-->
+            <!--Chessboard-->
+            <% if(user.name == player1) { %>
+            <div class="row m-1">
+                    <div class="btn btn-outline-light text-center fs-5 col-2 m-2" id="surrender">Surrender</div>
+                <div class="bg-secondary text-center text-dark col-8 outline m-2" id="player1"><%- player1 %></div>
+            </div>
+            <% } else { %>
+                <div class="bg-secondary text-center text-dark outline m-2" id="player1"><%- player1 %></div>
+                <% } %>
+            <div class="mh-100 position-relative">
+                <div class="ratio ratio-1x1 start-50 translate-middle-x" style="max-width: 75vh;">
+                    <div class="container-fluid bg-secondary m-1" id="chessboard" style="--bs-gutter-x: 0;"></div>
+                </div>
+            </div>
+            <% if(user.name == player2) { %>
+            <div class="row m-1">
+                    <div class="btn btn-outline-light text-center fs-5 col-2 m-2" id="surrender">Surrender</div>
+                <div class="bg-secondary text-center text-dark col-8 outline m-2" id="player2"><%- player2 %></div>
+            </div>
+            <% } else { %>
+                <div class="bg-secondary text-center text-dark outline m-2" id="player2"><%- player2 %></div>
+                <% } %>
+        </div>
+    </div>
+
+
+    <!--Chat on right side-->
+    <div class="bg-secondary col-sm-12 col-md-3 col-lg-3">
+        <div class="bg-secondary text-light" tabindex="0" id="moves" style="height: 50%; overflow-y: scroll;"></div>
+        <div class="bg-secondary text-light" tabindex="0" id="chat" style="height: 40%; overflow-y: scroll;"></div>
+        <form class="d-flex m-1" id="chatinput">
+            <input class="form-control me-2" type="text" placeholder="Chat" aria-label="Text">
+            <button class="btn btn-outline-light" type="submit">Send</button>
+        </form>
+    </div>
+</div>
+

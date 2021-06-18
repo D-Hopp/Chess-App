@@ -1,0 +1,20 @@
+.outline {
+    --color: black;
+    --borderSize: 2px;
+    border: var(--borderSize) solid var(--color);
+}
+
+.center-text-outer {
+    display: table;
+    text-align: center;
+    height: 100%;
+}
+
+.center-text-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bg-light-gray {
+    background-color: rgb(160, 160, 160);
+}
